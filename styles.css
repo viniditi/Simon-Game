@@ -1,0 +1,86 @@
+:root {
+    --size: min(90vmin, 520px);
+    --gap: 16px;
+    --pad-radius: 100%;
+    --shadow: 0 12px 30px rgba(234, 226, 226, 0.25);
+    --border: 8px solid #111;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background-color: #011F3F;
+    text-align: center;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  margin-top: 2%;
+  color: #FEF2BF;
+}
+
+.simon {
+    width: var(--size);
+    aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--gap);
+    padding: var(--gap);
+    border-radius: 50%;
+    background: #111;
+    box-shadow: var(--shadow);
+    position: relative;
+    isolation: isolate;
+}
+
+.simon::after {
+    content: "";
+    position: absolute;
+    inset: 50%;
+    translate: -50% -50%;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    background: #0b0b0b;
+    border: 7px solid #1e1e1e;
+    border-radius: 50%;
+    
+}
+
+.btn {
+    border: var(--border);  
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.btn:active,
+.btn:hover {
+    filter: brightness(1.15);
+    box-shadow: 0 0 10px rgba(255,255,255,0.5) inset;
+}
+
+.btn.green  { background: #2ecc71; border-top-left-radius: var(--pad-radius); }
+.btn.red    { background: #ba3c2e; border-top-right-radius: var(--pad-radius); }
+.btn.yellow { background: #f1c40f; border-bottom-left-radius: var(--pad-radius); }
+.btn.blue   { background: #3498db; border-bottom-right-radius: var(--pad-radius); }
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.pressed {
+    filter: brightness(1.15);
+    box-shadow: 0 0 10px rgba(255,255,255,0.5) inset;
+}
