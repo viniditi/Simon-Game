@@ -1,8 +1,9 @@
-<h1>Simon Game made with JavaScript</h1>
-<p>This web aplication is a virtual version of the Simon Game, a famous memory game.</p>
+<h1>To see this document in english, click <a href="README.en.md">here</a></h1>
+<h1>Jogo Simon feito em JavaScript</h1>
+<p>Essa aplicação web é uma versão virtual do Jogo do Simon, um famoso jogo de memória.</p>
 
-<h2>How to Play</h2>
-<p>First, press any key on your keyboard. After this, the game will start with by flashing one of the four colors displayed. You should press the color that flashed. If you have pressed correctly, the game will flash another color (if not the same), and you should press the first color and then the second color that twinkled. If you have pressed correctly, another color will flash and so on...</p>
+<h2>Como jogar</h2>
+<p>Primeiro, pressione qualquer tecla do seu teclado. Depois disso, o jogo começará piscando uma das quatro cores exibidas. Você deve pressionar a cor que piscou. Se você pressionou corretamente, o jogo piscará outra cor (se não for a mesma), e você deve pressionar a primeira cor e depois a segunda cor que piscou. Se você pressionou corretamente, outra cor piscará e assim por diante...</p>
 
-<h2>How this game was built</h2>
-<p>This game is made with HTML, CSS, and JavaScript using the JQuery lib. Although JQuery is losing influence on the web, some older projects still use this library.</p>
+<h2>Como esse jogo foi construído</h2>
+<p>Este jogo foi criado com HTML, CSS e JavaScript usando a biblioteca JQuery. Embora o JQuery esteja perdendo influência na web, alguns projetos mais antigos ainda usam essa biblioteca.</p>
